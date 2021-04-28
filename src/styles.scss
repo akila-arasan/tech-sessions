@@ -1,1 +1,32 @@
 /* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: 'Lato', sans-serif;
+}
+
+h6 {
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.w-100 {
+  width: 100%;
+}
