@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'SystemDesignSession';
+  title = 'Tech-sessions';
 
   keyMap = {
     previous: 'b',
