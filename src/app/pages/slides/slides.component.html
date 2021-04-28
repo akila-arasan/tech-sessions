@@ -1,0 +1,47 @@
+<div class="flex flex-column slides-wrapper">
+  <section class="justify-content-center flex w-100 slider-header">
+    <h6>A Brief Intro to System Design & CQRS Design Pattern</h6>
+  </section>
+  <section
+    class="flex flex-column justify-content-center slider-content"
+    [ngSwitch]="currentSlideId"
+  >
+    <section *ngSwitchCase="1" class="slide-wrapper">
+      <div class="slide-title">
+        <span>Birds Eye Overview of Session Plan</span>
+      </div>
+      <ul>
+        <li>What's System Design?</li>
+        <li>Aspects of Design thinking</li>
+        <li>CQRS Design Pattern</li>
+        <li>Real Time CQRS Design Pattern Scenario</li>
+        <li>Way Ahead</li>
+        <li>Watercooler convos</li>
+      </ul>
+    </section>
+    <section *ngSwitchCase="2" class="slide-wrapper">
+      <div class="slide-title">
+        <span>What's System Design?</span>
+      </div>
+      <div>
+        <div class="slide-item flex flex-column">
+          <span class="slide-item-label">System:</span>
+          <span
+            class="slide-item-content"
+            >Assembly of various different components to solve a business
+            problem.
+          </span>
+          <img class="slide-item-img" src="../../../assets/images/basic-design.png" />
+        </div>
+        <div class="slide-item flex flex-column">
+          <span class="slide-item-label">Design:</span>
+          <span
+            class="slide-item-content"
+            >Optimistic / Efficient way of connecting the components to achieve
+            desired performance and outcome.
+          </span>
+        </div>
+      </div>
+    </section>
+  </section>
+</div>
