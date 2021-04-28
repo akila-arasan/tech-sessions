@@ -1,0 +1,47 @@
+.slides-wrapper {
+  .slider-header {
+    min-height: 80px;
+    margin: 12px 0px;
+  }
+
+  .slider-content {
+    min-height: 80%;
+  }
+
+  .slide-wrapper {
+    margin: auto;
+  }
+
+  .slide-item-content {
+    margin: auto;
+    padding: 24px;
+  }
+
+  .slide-item-img {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+  }
+
+  .slide-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    margin: 32px 0px;
+    text-align: center;
+  }
+
+  .slide-item {
+    letter-spacing: 1.5px;
+    margin-top: 8px;
+
+    .slide-item-label {
+      padding: 0px 4px;
+    }
+  }
+
+  ul {
+    li {
+      margin: 12px 0px;
+    }
+  }
+}

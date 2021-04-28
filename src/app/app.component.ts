@@ -7,7 +7,7 @@ import { ActivatedRoute, Router } from '@angular/router';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'SystemDesignSession';
+  title = 'Tech-sessions';
 
   keyMap = {
     previous: 'b',
@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   slideBounds = {
     lower: 1,
-    upper: 10
+    upper: 13
   }
 
   currentSlideId: number = 1;
