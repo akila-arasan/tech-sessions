@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-slides',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SlidesComponent implements OnInit {
 
-  constructor() { }
+  currentSlideId: number = 1;
+
+  constructor(private activatedRoute: ActivatedRoute) {
+    this.activatedRoute.paramMap.subscribe((paramMap) => {
+      paramMap && (
+        this.currentSlideId = Number(paramMap.get('id'))
+      )
+    })
+   }
 
   ngOnInit(): void {
+    console.log('here', this.activatedRoute);
   }
 
 }
