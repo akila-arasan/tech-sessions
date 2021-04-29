@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
 
   slideBounds = {
     lower: 1,
-    upper: 13
+    upper: 15
   }
 
   currentSlideId: number = 1;

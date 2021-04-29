@@ -39,6 +39,39 @@
     }
   }
 
+  .water-cooler-slide-item {
+    margin: 24px 0px;
+    letter-spacing: 1.5px;
+  }
+
+  .cooler-title {
+    font-size: 1.34rem;
+    display: flex;
+    align-items: center;
+  }
+
+  .water-cooler-slide-icon {
+    width: 32px;
+    margin: 0px 8px;
+  }
+
+  .cqrs-wrapper {
+    flex: 1;
+    margin: 12px 0px;
+  }
+
+  .normal-wrapper {
+    flex: 0.5;
+    margin: 18px 0px;
+  }
+
+  .cqrs-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dotted;
+    padding: 24px;
+  }
+
   ul {
     li {
       margin: 12px 0px;
