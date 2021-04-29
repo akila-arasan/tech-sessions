@@ -62,6 +62,10 @@
           <span>Ideally zero / minimal <b>downtime</b> is strived to be achieved.</span>
         </div>
       </div>
+      <div class="slide-item flex flex-column">
+        <span style="text-align: center; padding: 0px 12px;">Key Component of Availability:<b>Load Balancer</b></span>
+        <img style="max-height: 350px; max-width: 40vw; padding: 24px 0px;margin: auto;" src="../../../assets/images/load_balancer.jpeg">
+      </div>
     </section>
     <section *ngSwitchCase="5" class="slide-wrapper">
       <div class="slide-title">
@@ -72,14 +76,38 @@
           <span>Scalability is how the system resources can cope up with unpredictable customer demands.</span>
         </div>
       </div>
+      <div class="slide-item flex flex-column">
+        <span style="font-weight: 700;padding: 12px 0px 0px;">Strategies of Scaling:</span>
+        <ul>
+          <li> Horizontal Scaling</li>
+          <li>Vertical Scaling</li>
+        </ul>
+        <img style="padding: 24px 0px;"src="../../../assets/images/scaling.jpg" />
+      </div>
     </section>
     <section *ngSwitchCase="6" class="slide-wrapper">
       <div class="slide-title">
         <span>Resiliency</span>
+      </div>
+      <div class="slide-item">
+        <div>
+          <span>Resiliency is the ability of a system to gracefully handle the failures and recover from failures as soon as it can.</span>
+        </div>
         <div class="slide-item">
           <div>
-            <span>Resiliency is the ability of a system to gracefully handle the failures and recover from failures as soon as it can.</span>
+            <span>Design pattern to know: <b>Circuit Breaker Design Pattern</b></span>
           </div>
+          <div class="slide-item">
+            <span style="font-weight: 700;padding: 12px 0px 0px;">Three states of Circuit Breaker Pattern</span>
+            <ul>
+              <li>Open State</li>
+              <li>Closed State</li>
+              <li>Half Open State</li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex justify-content-center">
+          <img src="../../../assets/images/cb.png">
         </div>
       </div>
     </section>
@@ -92,6 +120,22 @@
           <span>Data management plays a crucial role in scalability, availability, security and resiliency</span>
         </div>
       </div>
+      <div class="slide-item">
+        <span style="font-weight: 700;padding: 12px 0px 0px;">Functional aspects to consider:</span>
+        <ul>
+          <li>write heavy (more user transactions)</li>
+          <li>read-heavy (reports)</li>
+          <li>time series (log processing)</li>
+          <li>Datawarehouse (data analytics)</li>
+        </ul>
+      </div>
+      <div class="slide-item">
+        <span style="font-weight: 700;padding: 12px 0px 0px;">Non-Functional aspects to consider:</span>
+        <ul>
+          <li>Data availability</li>
+          <li>Data consistency</li>
+        </ul>
+      </div>
     </section>
     <section *ngSwitchCase="8" class="slide-wrapper">
       <div class="slide-title">
@@ -100,6 +144,11 @@
       <div class="slide-item">
         <div>
           <span>Scalability and performance are interrelated. If there are more users compared to what the system can handle, it is natural that the system would encounter performance issues.</span>
+        </div>
+      </div>
+      <div class="slide-item">
+        <div>
+          <span>Note:Scalability can’t solve all the performance issues but can solve some issues</span>
         </div>
       </div>
     </section>
@@ -111,6 +160,14 @@
         <div>
           <span>Building secure systems gives an assurance to users that their data is in safe hands</span>
         </div>
+      </div>
+      <div class="slide-item">
+        <span style="font-weight: 700;padding: 12px 0px 0px;">Three Aspects of Security</span>
+        <ul>
+          <li>Data Confidentiality: Is the read access to resources correctly implemented so that they can only be read by the authorized users?</li>
+          <li>Data Integrity: Data integrity is the overall accuracy, completeness, and consistency of data.</li>
+          <li>Data Durability: Refers to long-term data protection</li>
+        </ul>
       </div>
     </section>
     <section *ngSwitchCase="10" class="slide-wrapper">
