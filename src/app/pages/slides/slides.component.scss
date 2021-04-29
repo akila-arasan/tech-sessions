@@ -55,6 +55,23 @@
     margin: 0px 8px;
   }
 
+  .cqrs-wrapper {
+    flex: 1;
+    margin: 12px 0px;
+  }
+
+  .normal-wrapper {
+    flex: 0.5;
+    margin: 18px 0px;
+  }
+
+  .cqrs-imgs {
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px dotted;
+    padding: 24px;
+  }
+
   ul {
     li {
       margin: 12px 0px;

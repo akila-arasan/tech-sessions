@@ -86,61 +86,206 @@
       <div class="slide-title">
         <span>CQRS Design Pattern</span>
       </div>
+      <div>
+        <div class="slide-item">
+          <b>Command Query Resource Segregation (CQRS)</b> Design Pattern as the
+          name implies is nothing but separating out your read and write models.
+        </div>
+        <div class="slide-item flex">
+          <div class="normal-wrapper">
+            <img src="../../../assets/images/cqrs.png" />
+            <div>Traditional Approach of Handling read & write</div>
+          </div>
+          <div class="cqrs-wrapper">
+            <div class="cqrs-imgs">
+              <img
+                style="max-height: 350px"
+                src="../../../assets/images/cqrs-type-1.png"
+              />
+              <img
+                style="max-height: 350px"
+                src="../../../assets/images/cqrs-type-2.png"
+              />
+            </div>
+            <div style="text-align: center">CQRS DESIGN MODEL</div>
+          </div>
+        </div>
+      </div>
     </section>
     <section *ngSwitchCase="11" class="slide-wrapper">
       <div class="slide-title">
         <span>Real Time CQRS Design Pattern Scenario</span>
       </div>
+      <div class="slide-item">
+        <div class="flex">
+          <div>
+            <img
+              style="max-height: 350px"
+              src="../../../assets/images/user-address-1.png"
+            />
+            <div>Existing Design of User Model</div>
+          </div>
+          <div style="padding: 0px 24px;">
+            <span>New Features to add</span>
+            <ul>
+              <li>Group user address based on region</li>
+              <li>Show permanent address of user</li>
+              <li>
+                Show changes made by user in his permananet address in last two
+                months
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </section>
     <section *ngSwitchCase="12" class="slide-wrapper">
+      <div class="slide-title">
+        <span>Real Time CQRS Design Pattern Scenario (1.1)</span>
+      </div>
+      <div class="slide-item">
+        <div class="flex">
+          <div>
+            <img
+              style="max-height: 350px"
+              src="../../../assets/images/user-address-1.1.png"
+            />
+            <div>CQRS Implementation</div>
+          </div>
+          <div class="flex flex-column" style="padding: 0px 24px;">
+          <div>
+            <span>Features Handled</span>
+            <ul>
+              <li>Group user address based on region</li>
+              <li>Show permanent address of user</li>
+            </ul>
+          </div>
+          <div>
+            <span>Advantages</span>
+            <ul>
+              <li>Optimize read performance</li>
+              <li>You can scale your read store independently</li>
+            </ul>
+          </div>
+          <div>
+            <span>Problem Statement Left</span>
+            <ul>
+              <li>
+                Show changes made by user in his permananet address in last two
+                months
+              </li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section *ngSwitchCase="13" class="slide-wrapper">
+      <div class="slide-title">
+        <span>Real Time CQRS Design Pattern Scenario (1.2)</span>
+      </div>
+      <div class="slide-item">
+        <div class="flex">
+          <div>
+            <img
+              style="max-height: 350px"
+              src="../../../assets/images/user-address-1.2.png"
+            />
+            <div>CQRS Event SourcingImplementation</div>
+          </div>
+          <div class="flex flex-column" style="padding: 0px 24px;">
+            <div>
+              <span>Event Sourcing</span>
+              <ul>
+                <li>
+                  Event Sourcing gives us a new way of persisting application
+                  state as an ordered sequence of events. We can selectively query
+                  these events and reconstruct the state of the application at any
+                  point in time
+                </li>
+              </ul>
+            </div>
+            <div>
+              <span>Advantages</span>
+              <ul>
+                <li>Optimize read performance</li>
+                <li>You can scale your read store independently</li>
+                <li>You can do time travel of the entity state.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section *ngSwitchCase="14" class="slide-wrapper">
       <div class="slide-title">
         <span>Way Ahead</span>
       </div>
       <div>
-        <section>
-          Few take home reference links & courses
-        </section>
+        <section>Few take home reference links & courses</section>
         <ul>
           <li>
-            <a href="https://github.com/prasadgujar/low-level-design-primer" target="_blank">
+            <a
+              href="https://github.com/prasadgujar/low-level-design-primer"
+              target="_blank"
+            >
               https://github.com/prasadgujar/low-level-design-primer
             </a>
           </li>
           <li>
-            <a href="https://www.educative.io/courses/grokking-the-system-design-interview" target="_blank">
+            <a
+              href="https://www.educative.io/courses/grokking-the-system-design-interview"
+              target="_blank"
+            >
               https://www.educative.io/courses/grokking-the-system-design-interview
             </a>
           </li>
           <li>
-            <a href="https://www.educative.io/courses/web-application-software-architecture-101" target="_blank">
+            <a
+              href="https://www.educative.io/courses/web-application-software-architecture-101"
+              target="_blank"
+            >
               https://www.educative.io/courses/web-application-software-architecture-101
             </a>
           </li>
           <li>
-            <a href=" https://www.baeldung.com/cqrs-event-sourcing-java" target="_blank">
+            <a
+              href=" https://www.baeldung.com/cqrs-event-sourcing-java"
+              target="_blank"
+            >
               https://www.baeldung.com/cqrs-event-sourcing-java
             </a>
           </li>
         </ul>
       </div>
     </section>
-    <section *ngSwitchCase="13" class="slide-wrapper">
+    <section *ngSwitchCase="15" class="slide-wrapper">
       <div class="slide-title">
         <span>WaterCooler Convos</span>
       </div>
       <div>
         <div class="water-cooler-slide-item cooler-title">
-          <img class="water-cooler-slide-icon" src="../../../assets/images/thumbs_up.svg" />
+          <img
+            class="water-cooler-slide-icon"
+            src="../../../assets/images/thumbs_up.svg"
+          />
           <span>Let's Wrap up with your thoughts & queries!!!</span>
         </div>
         <div class="water-cooler-slide-item">
           <span>Note:</span>
-          <span>You can find this session link
-            <a href="https://akilas-techminutes.netlify.app/" target="_blank">here.</a>
+          <span
+            >You can find this session link
+            <a href="https://akilas-techminutes.netlify.app/" target="_blank"
+              >here.</a
+            >
           </span>
         </div>
         <div class="water-cooler-slide-item">
-          Any queries ping / email to <a href="mailto:Akilandeswari.DA@enquero.com">Akilandeswari.DA@enquero.com</a>
+          Any queries ping / email to
+          <a href="mailto:Akilandeswari.DA@enquero.com"
+            >Akilandeswari.DA@enquero.com</a
+          >
         </div>
       </div>
     </section>
